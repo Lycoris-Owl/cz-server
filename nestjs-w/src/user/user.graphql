@@ -1,0 +1,12 @@
+type User {
+    id: String,
+    pw: String
+}
+
+type Query {
+    login(userId:String!, userPw:String!):Boolean
+}
+
+type Mutation {
+    register(userId:String!, userPw:String!):Boolean
+}
